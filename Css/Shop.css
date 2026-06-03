@@ -1,0 +1,221 @@
+/* navbar start */
+*,a {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+#row1 > *{
+    height: 100px;
+    
+}
+#row2 > *{
+    height: 50px;
+}
+#row > *{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: all linear 0.2s;
+    
+    
+}
+#row a:hover{
+    color: rgb(44, 96, 206);
+    
+
+}
+#searchbar{
+    width: 60%;
+    height: 50px;
+    outline: none;
+    box-shadow: none;
+    
+
+}
+.nav{
+    gap: 40px;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+    
+.nav li a{
+    color: white;
+    text-transform: uppercase;
+    transition:all linear.44s;
+    
+     
+}
+.nav li a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration-thickness: 2px;
+}
+
+
+#categories{
+    text-align: center;
+    align-content: center;
+     color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: sans-serif;
+    
+    
+}
+#navicons{
+    text-align: center;
+    
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.srb{
+    width: 90px;
+   
+    height: 50px;
+    border: none;
+    color: white;
+    background-color:  #317ee4;;
+    transition: all linear 0.3s;
+}
+.srb:hover{
+    background-color: black;
+    color: white;
+}
+.srb1{
+    margin-top: 25px;
+    width: 150px;
+    font-family:Bahnschrift;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color:  #317ee4;;
+    transition: all linear 0.3s;
+    
+    border-radius: 5px;
+}
+.srb1:hover{
+    background-color: black;
+    color: white;
+}
+#otherslink{
+    background-color: #317ee4;
+}
+#otherslink li a{
+    color: rgb(255, 255, 255);
+   
+}
+#otherslink li a:hover{
+color: rgb(255, 255, 255);
+background-color:black ;
+}
+/* navbar end */
+.location{
+    color: gray;
+    transition: all linear 0.2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.location:hover{
+color:#317ee4;
+}
+/* deal product start */
+
+
+
+#cardpic{
+   line-height: 50px;
+    background-color: #317ee4;
+    transition: all linear 0.3s;
+    margin: 15px;
+ 
+}
+#cardpic:hover{
+        box-shadow: 5px 5px 5px 2px rgb(150, 146, 146);
+        transform: scale(102%);
+        
+
+
+}
+#cardpic a img{
+    height: 250px;
+   border-bottom-left-radius:20px ;
+   border-bottom-right-radius:20px ;
+   transition: all linear 0.3s;
+}
+#cardpic a img:hover{
+  transform: scale(98%);
+}
+
+.cardpic:hover{
+    background-image: url("/images/mobile2.webp");
+   
+}
+#bt{
+   padding: 13px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color:  #ffffff;;
+    transition: all linear 0.3s;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+    
+    
+}
+#bt:hover{
+    background-color: black;
+    color: white;
+}
+#shopitem{
+     background-color: rgb(238, 234, 234);
+    height: 600px;
+    margin-top: 30px;
+    text-align: start;
+    border-radius: 20px;
+}
+#blogcategorieslink li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all linear 0.3s;
+}
+#blogcategorieslink li a:hover{
+    color: #317ee4;
+}
+
+
+/* deal product end */
+
+/* footerstart */
+#information{
+   display: block;
+    line-height: 30px;
+     transition: all linear 0.2s;
+}
+#myaccount{
+    display: block;
+    line-height: 30px;
+    transition: all linear 0.2s;
+}
+#row4 a:hover{
+    color: #317ee4;
+}
+#siteicon{
+   display: inline;
+   transition: all linear 0.2s;
+   font-size: 40px;
+  
+}
+#subscribe{
+ padding: 11px;
+ width: 56%;
+}
+/* footerend */
