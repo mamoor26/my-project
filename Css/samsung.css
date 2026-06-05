@@ -1,0 +1,183 @@
+/* navbar start */
+*,a {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+#row1 > *{
+    height: 100px;
+    
+}
+#row2 > *{
+    height: 50px;
+}
+#row > *{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: all linear 0.2s;
+    
+    
+}
+#row a:hover{
+    color: rgb(44, 96, 206);
+    
+
+}
+#searchbar{
+    width: 60%;
+    height: 50px;
+    outline: none;
+    box-shadow: none;
+    
+
+}
+.nav{
+    gap: 40px;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+    
+.nav li a{
+    color: white;
+    text-transform: uppercase;
+    transition:all linear.44s;
+    
+     
+}
+.nav li a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration-thickness: 2px;
+}
+
+#categories{
+    text-align: center;
+    align-content: center;
+     color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: sans-serif;
+    
+    
+}
+#navicons{
+    text-align: center;
+    
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.srb{
+    width: 90px;
+   
+    height: 50px;
+    border: none;
+    color: white;
+    background-color:  #317ee4;;
+    transition: all linear 0.3s;
+}
+.srb:hover{
+    background-color: black;
+    color: white;
+}
+.srb1{
+    margin-top: 25px;
+    width: 150px;
+    font-family:Bahnschrift;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color:  #317ee4;;
+    transition: all linear 0.3s;
+    
+    border-radius: 5px;
+}
+.srb1:hover{
+    background-color: black;
+    color: white;
+}
+#otherslink{
+    background-color: #317ee4;
+}
+#otherslink li a{
+    color: rgb(255, 255, 255);
+   
+}
+#otherslink li a:hover{
+color: rgb(255, 255, 255);
+background-color:black ;
+}
+/* navbar end */
+/* card2start */
+#row7{
+    justify-content: center;
+    
+}
+#card2item1{
+    
+    width: 370px;
+    display: flex;
+    margin: 5px;
+    transition: all linear 0.3s;
+    border-radius: 10px;
+}
+#card2item1:hover{
+    box-shadow: 5px 5px 5px 2px rgb(150, 146, 146);
+        transform: scale(102%);
+}
+#card2item1 a img{
+    transition: all linear 0.3s;
+}
+#card2item1 a img:hover{
+   transform: scale(94%);
+}
+#card2btn{
+    
+    padding: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: #317ee4;
+    transition: all linear 0.3s;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#card2btn:hover{
+     background-color: black;
+    color: white;
+}
+/* card2end */
+/* footerstart */
+#information{
+   display: block;
+    line-height: 30px;
+     transition: all linear 0.2s;
+}
+#myaccount{
+    display: block;
+    line-height: 30px;
+    transition: all linear 0.2s;
+}
+#row4 a:hover{
+    color: #317ee4;
+}
+#siteicon{
+   display: inline;
+   transition: all linear 0.2s;
+   font-size: 40px;
+  
+}
+#subscribe{
+ padding: 11px;
+ width: 56%;
+}
+/* footerend */

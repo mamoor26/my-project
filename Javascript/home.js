@@ -24,7 +24,7 @@ for(i=0;i<=card.length;i++){
     <span style="color: white;">${card[i].price}</span>
     <h5 class="card-title" style="margin-top: -15px; color: white;">${card[i].title}</h5>
     
-    <a href="/carddetail.html?id=${card[i].id}" id="bt">view detail</a>
+    <a href="carddetail.html?id=${card[i].id}" id="bt">view detail</a>
   </div>
 </div>
    </div>

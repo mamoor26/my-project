@@ -1,7 +1,7 @@
 let data=[
-  {id:1,pic:"/images/fan1.webp",price:"$90.00",title:"Fan"},
+  {id:1,pic:"/images/fan1.webp",price:"$90.00",title:"Ceiling Fan,Sweep Size: 56 Inches (1400 mm),Rated Power: 50 Watts,Operating Voltage: 230V ± 10V (50 Hz frequency),Speed: 325 RPM,Air Delivery: 250 m³/min,Service Value: 4.54 m³/min/W.",},
   {id:2,pic:"/images/cardpic2.webp",price:"$78.00",title:"Handfree"},
-  {id:3,pic:"/images/cardpic3.webp",price:"$65.00",title:"Key Camera"},
+  {id:3,pic:"/images/cardpic3.webp",price:"$65.00",title:"Best Deal Product"},
   {id:4,pic:"/images/cardpic4.webp",price:"$55.00",title:"Head Phone"},
   {id:5,pic:"/images/oven1.avif",price:"$67.00",title:"Microwoven"},
   {id:6,pic:"/images/grinder1.avif",price:"$98.00",title:"Grinder"},
@@ -24,34 +24,51 @@ let data=[
   {id:23,pic:"/images/phone1.webp",price:"$123.00",title:"Red Me A25"},
   {id:24,pic:"/images/bud1.webp",price:"$500.00",title:"Air Burds"},
  ]
+ let urldata=new URLSearchParams(window.location.search);
+ let urlid=urldata.get("id")
 
- document.write(`
-    <div class="container mt-5 ">
-  <div class="row" >
-    
-    `)
+ let card=data.find(item => item.id==urlid)
+ let quantity=1;
+ let price=card.price;
+
+ 
 
 
-for(i=0;i<=data.length;i++){
+document.getElementById("shoppic").src = card.pic;
+document.getElementById("shoptitle").innerText=card.title;
 
-    document.write(`
-       <div class="col-md-6 col-sm-6 col-lg-3" >
-    <div id="cardpic" class="card text-center" >
-  <a href=""><img src="${data[i].pic}" class="card-img-top" alt="..."></a>
-  <div class="card-body">
-    <span style="color: white;">${data[i].price}</span>
-    <h6 class="card-title" style="margin-top: -10px; margin-bottom:10px ; color: white;">${data[i].title}</h6>
-    
-    <a href="shopdetail.html?id=${data[i].id}" id="bt">view detail</a>
-  </div>
-</div>
-   </div>
 
-        `)
-        
+
+
+
+document.getElementById('quantity').innerText=quantity
+document.getElementById('shopprice').innerText=price
+    function plus(){
+  quantity++;
+  uiupdate()
+    }
+
+
+
+function minus(){
+    if(quantity==0){
+        quantity=0
+    }
+
+
+  else{
+    quantity--;
+  uiupdate()
+  }
 
 }
-document.write(`
-     </div>
- </div>
-    `)
+
+function uiupdate(){
+  document.getElementById('quantity').innerText=quantity
+  document.getElementById('shopprice').innerText=price*quantity
+
+}
+
+
+
+
