@@ -22,7 +22,7 @@ document.write(`
             <div class="col-md-4 mt-5" id="card2item1" style="background-color: rgb(236, 236, 236);">
             <a href="/pages/Shop.html" ><img src="${samsung[i].pic}" alt="" width="150px"></a>
           <div class="div">
-            <span>$70.00</span>
+            <span>${samsung[i].price}</span>
           <h5 style="margin-bottom: 15px; margin-top: 10px;">${samsung[i].title} </h5>
           <a id="card2btn" href="samsungdetail.html?id=${samsung[i].id}">View Details</a>
           </div>

@@ -24,6 +24,7 @@ let dawlanceurldata=new URLSearchParams(window.location.search);
  let card=dawlance.find(item => item.id==dawlanceurlid)
  let quantity=1
  let price=card.price
+ let cart=[]
 
 document.write(`
       <div class="container mt-5">
@@ -38,6 +39,8 @@ document.write(`
              <button class="btn btn-danger mt-3" onclick="minus()"> <i class="fa-solid fa-minus" style="color: rgb(8, 8, 8);"></i></button>
       <span id="quantity"></span>
       <button class="btn btn-primary mt-3" onclick="plus()"><i  class="fa-solid fa-plus" style="color: rgb(8, 8, 8);"></i></button>
+      <hr>
+      <button class="btn btn-primary" onclick='addtocart()'>Add To Cart</button>
         </div>
     </div>
   </div>
@@ -68,4 +71,26 @@ function minus(){
 function uiupdate(){
   document.getElementById('quantity').innerText=quantity
   document.getElementById('samsungprice').innerText=price*quantity
+}
+function addtocart(){
+  if(quantity>0){
+
+    cart.push(
+      {
+        title:card.title,
+        quantity:quantity,
+        price:card.price
+        
+        
+
+      }
+      
+    )
+    document.getElementById("cart").innerText=cart.length
+    uiupdate
+ }
+  else{
+
+    alert("please increase your quantity")
+  } 
 }

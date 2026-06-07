@@ -25,7 +25,7 @@
     </div>
     <div class="container">
        <div id="row1" class="row ">
-        <div class="col-md-2 col-sm-12" ><a href=""><img src="" alt=""></a></div>
+        <div class="col-md-2 col-sm-12" ><a href=""><img src="" alt="" width="100%"></a></div>
         <div  class="col-md-8 col-sm-12 text-center" style=" align-content: center;">
             <input type="text" name="" id="searchbar" placeholder=" What Are You Looking For?" ><button class="srb">search</button></div>
         <div id="navicons" class="col-md-2 col-sm-12"  ><a href=""><i class="fa-regular fa-heart" style="color: rgb(8, 8, 8);"></i></a>
@@ -37,8 +37,8 @@
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <li><a class="dropdown-item" href="#"></a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item" href="/pages/dawlance.html">Another action</a></li>
+    <li><a class="dropdown-item" href="/pages/haier.html">Something else here</a></li>
   </ul>
 </div>
        </div>
@@ -54,9 +54,9 @@
   </a>
 
   <ul id="otherslink" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item " href="/pages/samsung.html">Samsung</a></li>
+    <li><a class="dropdown-item  " href="/pages/samsung.html">Samsung</a></li>
     <li><a class="dropdown-item" href="/pages/dawlance.html">Dawlance</a></li>
-    <li><a class="dropdown-item" href="/pages/haier.html">Haier</a></li>
+    <li><a class="dropdown-item" href="/pages/national.html">National</a></li>
   </ul>
 </div>
             </div>
@@ -73,15 +73,32 @@
     <li><a class="dropdown-item" href="/pages/Contatc.html">CONTACT US</a></li>
     <li><a class="dropdown-item" href="/pages/Blog.html">BLOG</a></li>
     <hr>
-    <li><a class="dropdown-item" href="#">FAQ's</a></li>
+    <li><a class="dropdown-item" href="/pages/faqs.html">FAQ's</a></li>
   </ul>
 </div>
                 
               
 
-              
+             
+               
             </ul></div>
-            <div class="col-md-3 col-sm-12"></div>
+            <div class="col-md-3 col-sm-12" style=" display: flex;justify-content: space-between; align-items: center;">
+              <div class="div" id="username" style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></div>
+              <div class="div">
+                 <a href="/pages/Home.html" class="btn btn-outline-dark" onclick="logout()" id="logoutbtn">Logout</a>
+                <!-- Example single danger button -->
+<div class="btn-group" id="account">
+  <button type="button" class="btn btn-outline-dark dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+    Account
+  </button>
+  <ul class="dropdown-menu" id="otherslink">
+    <li><a class="dropdown-item" href="/pages/login.html">Login</a></li>
+    <li><a class="dropdown-item" href="/pages/register.html">Register</a></li>
+    
+  </ul>
+</div>
+              </div>
+            </div>
         </div>
     </div>
  </header>
@@ -169,7 +186,7 @@
 </div>
 </footer>
 <!-- footer end -->
- 
+ <script src="/Javascript/register.js"></script>
  <script src="/assets/bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

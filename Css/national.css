@@ -9,6 +9,7 @@
 }
 #row1 > *{
     height: 100px;
+    
 }
 #row2 > *{
     height: 50px;
@@ -57,7 +58,9 @@
     color: rgb(0, 0, 0);
     text-decoration-thickness: 2px;
 }
-
+.nav .dropdown {
+    
+}
 #categories{
     text-align: center;
     align-content: center;
@@ -117,7 +120,8 @@ color: rgb(255, 255, 255);
 background-color:black ;
 }
 /* navbar end */
-/* card2start */
+
+
 
 #row7{
     justify-content: center;
@@ -156,6 +160,8 @@ background-color:black ;
     color: white;
 }
 /* card2end */
+
+
 /* footerstart */
 #information{
    display: block;
@@ -173,7 +179,8 @@ background-color:black ;
 #siteicon{
    display: inline;
    transition: all linear 0.2s;
-   font-size: 40px; 
+   font-size: 40px;
+  
 }
 #subscribe{
  padding: 11px;
